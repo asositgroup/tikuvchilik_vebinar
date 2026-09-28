@@ -209,3 +209,7 @@ img{ display:block; max-width:100%; }
 .rmodal__ok{ text-align:center; padding:10px 4px 2px; }
 .rmodal__check{ width:52px; height:52px; margin:0 auto 10px; border-radius:50%; display:grid; place-items:center; font-size:26px; color:#fff; background:linear-gradient(135deg,var(--brand-lt),var(--brand-dk)); }
 .rmodal__ok p{ font-size:14px; color:var(--ink); }
+
+/* ===================== ANIMATSIYALAR O'CHIRILDI ===================== */
+*, *::before, *::after{ animation:none !important; transition:none !important; }
+.reveal{ opacity:1 !important; transform:none !important; }

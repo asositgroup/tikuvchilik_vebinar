@@ -171,7 +171,7 @@ main{ background:var(--ink); overflow:hidden; }
 .hero__grid{ position:relative; z-index:1; display:flex; flex-direction:column; }
 
 /* rasm tepada — ramkasiz PNG cutout, kattalashtirilib tugmaga tegib turadi */
-.hero__media{ position:relative; z-index:1; width:74%; max-width:250px; margin:0 auto -10px; }
+.hero__media{ position:relative; z-index:1; width:84%; max-width:290px; margin:0 auto -10px; }
 .portrait{ position:relative; width:100%; }
 .portrait__img{
   width:100%; display:block;
@@ -367,3 +367,7 @@ main{ background:var(--ink); overflow:hidden; }
 .rmodal__ok{ text-align:center; padding:10px 4px 2px; }
 .rmodal__check{ width:52px; height:52px; margin:0 auto 10px; border-radius:50%; display:grid; place-items:center; font-size:26px; color:#241a08; background:linear-gradient(135deg,var(--gold-lt),var(--gold)); }
 .rmodal__ok p{ font-size:14px; color:#C7C0B0; }
+
+/* ===================== ANIMATSIYALAR O'CHIRILDI ===================== */
+*, *::before, *::after{ animation:none !important; transition:none !important; }
+.reveal{ opacity:1 !important; transform:none !important; }
