@@ -3,37 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Obuna Bo'lish</title>
+    <title>Obuna Bo'lish — Oxirgi qadam</title>
 
-    <link rel="preload" href="./fonts/bebas-neue.woff2" as="font" type="font/woff2" crossorigin />
-    <style id="critical-css">@font-face{font-family:"Bebas Neue";src:url(./fonts/bebas-neue.woff2) format("woff2");font-weight:700;font-display:swap}:root{--cream:#FBF6EF;--ink:#26191C}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:system-ui, sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;-webkit-font-smoothing:antialiased}img{display:block;max-width:100%}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}*{margin:0;padding:0;box-sizing:border-box}.header{padding-top:clamp(48px,14vh,180px);padding-bottom:clamp(24px,6vh,48px);background-color:#ebe8e3;min-height:100vh;padding-top:clamp(48px,14vh,180px)}.header-container{margin-left:auto;margin-right:auto;max-width:671px;width:100%;display:flex;background-repeat:no-repeat;padding-left:20px;padding-right:20px}.hero-left{max-width:903px;width:100%;display:flex;flex-direction:column;align-items:center}.hero-title{font-family:"Bebas Neue" , sans-serif;font-weight:700;font-size:clamp(36px,9vw,72px);line-height:100%;letter-spacing:0%;text-align:center;margin-bottom:clamp(8px,3vw,25px);text-transform:uppercase;max-width:622px}.hero-text{font-family:sans-serif;font-weight:500;font-size:clamp(16px,4.5vw,26px);line-height:150%;letter-spacing:0%;margin-bottom:clamp(24px,7vw,58px);max-width:522px}.hero-btn-box{max-width:585px;width:100%}.hero-img{text-align:center;align-items:center;justify-content:center;margin-bottom:46px;display:flex;margin-left:auto;margin-right:auto}.hero-btn{display:flex;align-items:center;justify-content:center;font-family:"Bebas Neue" , sans-serif;font-weight:700;font-size:clamp(28px,7vw,54px);line-height:100%;text-align:center;padding:clamp(20px,5vw,32px) clamp(12px,4vw,24px);background-color:#039BE5;box-shadow:0px 5px 0px 0px #006393;color:white;border-radius:30px;max-width:585px;width:100%;border:none;text-transform:uppercase;margin-bottom:42px;text-decoration:none;max-height:142px}@media (max-width:500px){.header{padding-top:clamp(48px,14vh,180px);padding-bottom:clamp(24px,6vh,48px);background-image:none}.hero-left{display:block}.header-container{margin-left:auto;margin-right:auto;text-align:center;padding-left:10px;padding-right:10px}.hero-title{font-weight:700;font-size:clamp(36px,9vw,72px);line-height:100%;letter-spacing:0%;text-align:center;margin-bottom:clamp(8px,3vw,25px)}.hero-img{margin-bottom:24px;height:69px}.hero-btn{font-weight:700;font-size:clamp(28px,7vw,54px);line-height:100%;letter-spacing:0%;text-align:center;padding:clamp(20px,5vw,32px) clamp(12px,4vw,24px);border-radius:30px;max-width:345px;width:100%;margin-left:auto;margin-right:auto;margin-bottom:25px}}.thanks-style-1{color:#ff0000}img{height:auto}.hero-img{width:auto;max-width:100%}</style>
-    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
-    <noscript><link rel="stylesheet" href="./css/main.css" /></noscript>
+    <link rel="preload" href="./fonts/playfair.woff2" as="font" type="font/woff2" crossorigin />
+    <style id="critical-css">@font-face{font-family:"Playfair Display";src:url(./fonts/playfair.woff2) format("woff2");font-weight:400 900;font-display:swap}:root{--cream:#FBF6EF;--blush:#F3E4DE;--ink:#26191C;--ink-soft:#6A575B;--gold:#B0894F;--gold-lt:#D9BE86;--gold-dk:#8A6A38;--burgundy:#7A2E3A;--burgundy-dk:#4E1B24;--rose:#A85C6C;--line:#E6D9CB;--white:#fff;--maxw:460px}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.55;-webkit-font-smoothing:antialiased}img{display:block;max-width:100%}
+    .ty{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;max-width:var(--maxw);margin:0 auto;padding:clamp(18px,4vh,44px) clamp(20px,6vw,34px)}
+    .ty__brand{font-family:'Playfair Display',serif;font-weight:800;font-size:clamp(17px,5vw,24px);letter-spacing:clamp(3px,1.6vw,8px);text-transform:uppercase;background:linear-gradient(100deg,var(--gold-dk) 0%,var(--burgundy) 45%,var(--burgundy-dk) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;margin-bottom:clamp(14px,4vw,24px)}
+    .steps{display:flex;align-items:center;justify-content:center;gap:0;margin-bottom:clamp(14px,4vw,24px)}
+    .steps__dot{flex:0 0 auto;width:clamp(44px,12vw,54px);height:clamp(44px,12vw,54px);border-radius:50%;display:grid;place-items:center;font-family:'Playfair Display',serif;font-weight:800;font-size:clamp(18px,5vw,22px)}
+    .steps__dot--done{background:var(--burgundy-dk);color:#fff;box-shadow:0 8px 18px -8px rgba(78,27,36,.7)}
+    .steps__dot--now{background:var(--cream);color:var(--burgundy);border:2px solid var(--burgundy)}
+    .steps__dot svg{width:clamp(20px,5.5vw,24px);height:clamp(20px,5.5vw,24px);fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+    .steps__bar{flex:0 0 auto;width:clamp(26px,8vw,46px);height:5px;border-radius:999px}
+    .steps__bar--done{background:var(--burgundy-dk)}
+    .steps__bar--todo{background:var(--line)}
+    .ty__title{font-family:'Playfair Display',serif;font-weight:800;text-transform:uppercase;font-size:clamp(26px,7.2vw,42px);line-height:1.04;letter-spacing:.4px;margin-bottom:clamp(12px,3.2vw,18px)}
+    .ty__title .l1{color:var(--burgundy-dk)}
+    .ty__title .l2{color:var(--rose);display:block}
+    .ty__text{font-size:clamp(14px,3.9vw,18px);color:var(--ink);max-width:30ch;margin:0 auto clamp(12px,3.2vw,18px)}
+    .ty__text b{color:var(--burgundy);font-weight:700}
+    .ty__arrows{display:flex;justify-content:center;gap:clamp(10px,4vw,20px);color:var(--burgundy);font-size:clamp(16px,4.4vw,22px);font-weight:700;margin-bottom:clamp(12px,3.2vw,18px);line-height:1}
+    .ty__btn{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;max-width:420px;font-family:sans-serif;font-weight:800;font-size:clamp(18px,5.2vw,24px);letter-spacing:.6px;text-transform:uppercase;text-decoration:none;color:var(--cream);background:linear-gradient(135deg,var(--burgundy) 0%,var(--burgundy-dk) 100%);border:2px solid var(--gold);border-radius:18px;padding:clamp(15px,4.2vw,20px) clamp(16px,5vw,28px);box-shadow:0 14px 30px -12px rgba(122,46,58,.75),0 0 0 4px rgba(217,190,134,.18);transition:transform .15s ease,filter .15s ease,box-shadow .15s ease}
+    .ty__btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
+    .ty__btn:active{transform:translateY(0)}
+    .ty__btn svg{width:clamp(22px,6vw,28px);height:clamp(22px,6vw,28px);fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .ty__note{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(13px,3.6vw,16px);color:var(--gold-dk);max-width:30ch;margin:clamp(12px,3.2vw,18px) auto 0}
+    .ty__foot{margin-top:clamp(18px,5vw,34px);font-size:clamp(12px,3.3vw,14px);color:var(--ink-soft)}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ty__btn{transition:none}}
+    </style>
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3032578633745060');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
   </head>
   <body>
-    <section class="header">
-      <div class="header-container">
-        <div class="hero-left">
-          <h1 class="hero-title">oxirgi qadam qoldi!</h1>
-          <p class="hero-text">
-            Bepul darsni qo’lga kiritish uchun <br />
-            quyidagi tugma orqali telegram kanalga <span class="thanks-style-1">obuna bo'ling</span>
-          </p>
-          <div class="hero-btn-box">
-            <img
-              class="hero-img"
-              src="./images/strelka.avif"
-              alt="Arrow icon"
-              loading="lazy"
-              decoding="async"
-              width="16"
-              height="119"
-            />
-            <a href="https://t.me/+uRI9qwHJsfplY2Yy" class="hero-btn thankYouBtn">obuna bo’lish</a>
-          </div>
+<!-- Meta Pixel noscript fallback -->
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3032578633745060&ev=PageView&noscript=1"
+/></noscript>
+    <main class="ty">
+      <div class="hero-left" style="display:contents">
+        <p class="ty__brand">Master Komo</p>
+
+        <div class="steps" aria-label="3-qadamdan 3-qadam">
+          <span class="steps__dot steps__dot--done" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 12.5 10 18 20 6" /></svg>
+          </span>
+          <span class="steps__bar steps__bar--done"></span>
+          <span class="steps__dot steps__dot--done" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 12.5 10 18 20 6" /></svg>
+          </span>
+          <span class="steps__bar steps__bar--todo"></span>
+          <span class="steps__dot steps__dot--now">3</span>
         </div>
+
+        <h1 class="ty__title">
+          <span class="l1">To'xtang! Oxirgi</span>
+          <span class="l2">Qadam qoldi!</span>
+        </h1>
+
+        <p class="ty__text">
+          Quyidagi <b>OBUNA BO'LISH</b> tugmasini bosib, master klass bo'ladigan
+          <b>yopiq kanalga</b> qo'shiling!
+        </p>
+
+        <div class="ty__arrows" aria-hidden="true">
+          <span>↓</span><span>↓</span><span>↓</span><span>↓</span><span>↓</span>
+        </div>
+
+        <a href="https://t.me/+uRI9qwHJsfplY2Yy" class="ty__btn thankYouBtn">
+          <svg viewBox="0 0 24 24"><path d="M22 3 2 10.5l6.5 2.5M22 3l-3 16-7.5-6M22 3 8.5 13m0 0v6l3-3.5" /></svg>
+          Obuna bo'lish
+        </a>
+
+        <p class="ty__note">Efir havolasi va maxsus sovg'alar faqat kanalda beriladi.</p>
       </div>
-    </section>
+
+      <p class="ty__foot">Master KOMO · Jonli master klass · 9–10 oktabr, 20:30</p>
+    </main>
 
     <script src="./js/thankYou.js" defer=""></script>
   </body>
