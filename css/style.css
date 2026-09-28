@@ -105,54 +105,23 @@ img{ display:block; max-width:100%; }
   opacity:.5; z-index:-1;
 }
 
-/* ---------- OFFER ROZETKASI (yangi chiroy) ---------- */
-.offer{
-  display:flex; flex-direction:column; align-items:center; gap:12px;
-  margin:0 0 16px;
-}
-/* Yuqoridagi oltin bezak: — ✦ — */
-.offer__deco{
-  display:flex; align-items:center; gap:11px;
-  color:var(--gold); font-size:12px; line-height:1;
-}
-.offer__deco i{ display:block; width:42px; height:1px;
-  background:linear-gradient(90deg, transparent, var(--gold-lt)); }
-.offer__deco i:last-child{
-  background:linear-gradient(90deg, var(--gold-lt), transparent); }
-.offer__deco b{ filter:drop-shadow(0 1px 2px rgba(138,106,56,.4)); }
-
-/* Asosiy rozetka */
+/* ---------- OFFER — qolibsiz, matn ko'rinishida (chiroyli) ---------- */
+.offer{ display:flex; justify-content:center; margin:10px 0 22px; padding:0 16px; }
 .offer__pill{
-  position:relative; overflow:hidden;
-  display:inline-flex; align-items:center; gap:10px;
-  padding:8px 14px 8px 16px;
-  background:linear-gradient(180deg, #fff, var(--blush));
-  border:1px solid rgba(138,106,56,.32);
-  border-radius:999px;
-  box-shadow:var(--shadow-sm), inset 0 1px 0 rgba(255,255,255,.85);
+  display:inline-flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:10px;
+  font-family:'Playfair Display', serif; font-weight:800; font-size:23px;
+  letter-spacing:.3px; text-transform:uppercase; color:var(--burgundy); line-height:1.15; text-align:center;
 }
-/* Yumshoq o'tuvchi yorug'lik (shimmer) */
-.offer__pill::before{
-  content:""; position:absolute; top:0; left:-60%; width:45%; height:100%;
-  background:linear-gradient(100deg, transparent, rgba(255,255,255,.65), transparent);
-  transform:skewX(-18deg);
-  animation:offerShine 4.2s ease-in-out infinite;
-}
-@keyframes offerShine{
-  0%, 62% { left:-60%; }
-  86%, 100% { left:130%; }
-}
-.offer__days, .offer__mc{
-  font-size:12.5px; font-weight:700; letter-spacing:1.2px; text-transform:uppercase;
-  color:var(--burgundy);
-}
+.offer__spark{ color:var(--gold); font-size:15px; }
+.offer__days, .offer__mc{ color:var(--burgundy); }
+/* "BEPUL" — oltin gradient matn (qolibsiz), yiriklashtirilgan */
 .offer__free{
-  position:relative;
-  font-family:'Montserrat', sans-serif; font-weight:800;
-  font-size:12.5px; letter-spacing:1.4px; text-transform:uppercase; color:#fff;
-  padding:5px 13px; border-radius:999px;
-  background:linear-gradient(135deg, var(--gold-lt), var(--gold-dk));
-  box-shadow:0 7px 15px -7px rgba(138,106,56,.95), inset 0 1px 0 rgba(255,255,255,.45);
+  font-family:'Playfair Display', serif; font-weight:800; font-style:italic;
+  font-size:28px; letter-spacing:.3px; text-transform:uppercase;
+  background:linear-gradient(135deg, var(--gold-lt) 0%, var(--gold) 48%, var(--gold-dk) 100%);
+  -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent; color:transparent;
+  filter:drop-shadow(0 1px 2px rgba(138,106,56,.4));
 }
 
 /* Portret — ramkasiz, yumshoq fon + soya, kichikroq va tepaga surilgan */
