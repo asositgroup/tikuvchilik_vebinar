@@ -34,6 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.key === "Escape") closeModal();
   });
 
+  window.addEventListener("pageshow", () => {
+    submitButton.disabled = false;
+    submitButton.textContent = "DAVOM ETISH";
+  });
+
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     if (submitButton.disabled) return;
@@ -45,10 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!name || !validPhone) return;
 
     submitButton.disabled = true;
-    submitButton.textContent = "YUBORILMOQDA...";
     if (!window.saveRegistration(name, `${formatter.getCurrentCode()} ${phone}`)) {
       submitButton.disabled = false;
-      submitButton.textContent = "DAVOM ETISH";
       return;
     }
     window.location.href = "/thankYou.html";

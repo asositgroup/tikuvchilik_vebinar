@@ -39,6 +39,10 @@
       .filter(Boolean)
       .join(" ");
   });
+  window.addEventListener("pageshow", () => {
+    submitButton.disabled = false;
+  });
+
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     if (submitButton.disabled) return;
