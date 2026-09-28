@@ -1,188 +1,260 @@
 <!DOCTYPE html>
 <html lang="uz">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2 kunlik BEPUL master klass | Atelier bichiq-tikish</title>
-<meta name="description" content="Andozadan tayyor libosgacha. 2 kunlik BEPUL online master klass: asos andoza, karset va chet el brendlari uslubida libos bichish. 9–10 oktabr, 20:30.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%E2%9C%82%EF%B8%8F%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="fonts/fonts.css">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2 kunlik BEPUL master klass | Atelier bichiq-tikish</title>
+    <meta
+      name="description"
+      content="Andozadan tayyor libosgacha. 2 kunlik BEPUL online master klass: asos andoza, karset va chet el brendlari uslubida libos bichish. 9–10 oktabr, 20:30."
+    />
 
-<!-- ===================== NAV ===================== -->
-<header class="nav">
-  <div class="wrap nav__row">
-    <a href="#top" class="brand">
-      <span class="brand__mark">✂</span>
-      <span class="brand__name">MASTER<span class="brand__dot">·</span>KOMO</span>
-    </a>
-    <div class="nav__meta">
-      <span class="chip chip--when">
-        <span class="chip__live" aria-hidden="true"></span>
-        <b>9–10 Okt</b>
-        <span class="chip__sep"></span>
-        <b>20:30</b>
-      </span>
-    </div>
-  </div>
-</header>
-
-<main id="top">
-
-  <!-- ===================== HERO ===================== -->
-  <section class="hero">
-    <div class="hero__glow" aria-hidden="true"></div>
-    <div class="wrap hero__grid">
-
-      <div class="hero__col reveal">
-        <span class="eyebrow"><i></i>2 kunlik BEPUL master klass<i></i></span>
-        <p class="offer-promise">Bittada <em>qolipdek</em> tushadigan asos andoza chiqarish sirlari</p>
-        <div class="hero__media">
-          <div class="portrait">
-            <img src="images/expert-cut.png" alt="Master klass ustozi" class="portrait__img" loading="eager">
-          </div>
-        </div>
-
-        <div class="hero__cta">
-          <a href="#reg" class="btn btn--gold">BEPUL QATNASHISH →</a>
-        </div>
-
-        <!-- Countdown -->
-        <div class="count" id="countdown" aria-label="Ro'yxatdan o'tishga qolgan vaqt">
-          <span class="count__lbl">Ro'yxatdan o'tishga qoldi</span>
-          <div class="count__row">
-            <div class="cd"><b data-cd="mins">02</b><span>daqiqa</span></div>
-            <div class="cd"><b data-cd="secs">00</b><span>soniya</span></div>
-          </div>
+    <link rel="preload" as="image" type="image/avif" href="../images/b-expert-cut.avif" fetchpriority="high" />
+    <link rel="preload" href="../fonts/playfair.woff2" as="font" type="font/woff2" crossorigin />
+    <style id="critical-css">@font-face{font-family:"Playfair Display";src:url(../fonts/playfair.woff2) format("woff2");font-weight:400 900;font-display:swap}:root{--ink:#0E1017;--ink-2:#141824;--panel:#1A1F2E;--gold:#C9A15A;--gold-lt:#E7CE97;--gold-dk:#A67C3D;--cream:#F3ECDF;--muted:#9A9788;--line:rgba(201,161,90,.24);--line-2:rgba(243,236,223,.10)}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}html, body{overflow-x:hidden;width:100%;max-width:100%}body{font-family:system-ui, sans-serif;color:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased;background:var(--ink);min-height:100vh}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}.nav, main{width:100%;margin-left:auto;margin-right:auto}main{background:var(--ink);overflow:hidden}.wrap{width:100%;padding:0 clamp(12px,4.5vw,20px)}.eyebrow{display:inline-flex;align-items:center;gap:clamp(5px,2vw,10px);font-size:clamp(9px,2.7vw,11px);font-weight:700;letter-spacing:clamp(1px,.45vw,2px);text-transform:uppercase;color:var(--gold-lt);margin-bottom:8px}.eyebrow i{display:block;width:20px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}.eyebrow i:last-child{background:linear-gradient(90deg,var(--gold),transparent)}.offer-promise{position:relative;max-width:28ch;margin:0 auto 10px;padding:11px clamp(10px,4vw,18px);font-family:'Playfair Display' , serif;font-weight:700;font-style:italic;font-size:clamp(16px,4.8vw,21px);line-height:1.32;color:var(--gold-lt);border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg, rgba(201,161,90,.08), rgba(201,161,90,.02))}.offer-promise::before{content:"“";position:absolute;top:-6px;left:10px;font-family:'Playfair Display' , serif;font-size:34px;color:var(--gold);opacity:.5;line-height:1}.offer-promise em{font-style:italic;color:var(--cream)}.btn{--pad:clamp(16px,4.5vw,18px) clamp(14px,5vw,26px);display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:sans-serif;font-weight:800;font-size:clamp(12px,3.5vw,14px);letter-spacing:1px;text-transform:uppercase;cursor:pointer;padding:var(--pad);border-radius:999px;border:1px solid transparent;position:relative;overflow:hidden}.btn--gold{color:#241a08;background:linear-gradient(135deg, var(--gold-lt), var(--gold) 55%, var(--gold-dk));box-shadow:0 14px 30px -14px rgba(201,161,90,.9)}.nav{position:sticky;top:0;z-index:50;background:rgba(14,16,23,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-2)}.nav__row{display:flex;align-items:center;justify-content:space-between;height:58px}.brand{display:inline-flex;align-items:center;gap:clamp(4px,1.6vw,8px)}.brand__mark{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg, var(--gold-lt), var(--gold-dk));color:#20160a;font-size:15px;box-shadow:0 6px 14px -6px rgba(201,161,90,.8)}.brand__name{font-family:'Playfair Display' , serif;font-weight:700;font-size:clamp(12px,3.8vw,17px);letter-spacing:1px;color:var(--cream)}.brand__dot{color:var(--gold)}.nav__meta{display:flex;align-items:center;gap:8px}.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--cream);padding:6px 11px;border:1px solid var(--line-2);border-radius:999px}.chip--when{gap:clamp(4px,1.5vw,7px);padding:6px clamp(6px,2.5vw,14px);border:1px solid rgba(201,161,90,.42);background:linear-gradient(180deg, rgba(201,161,90,.12), rgba(201,161,90,.03));box-shadow:inset 0 1px 0 rgba(255,255,255,.05);font-size:clamp(10px,2.8vw,12px)}.chip--when b{font-weight:700;letter-spacing:.2px;color:var(--cream)}.chip__sep{width:1px;height:13px;background:rgba(201,161,90,.4)}.chip__live{width:7px;height:7px;border-radius:50%;background:var(--gold-lt);box-shadow:0 0 0 0 rgba(201,161,90,.6)}@media (max-width:400px){.nav__row{height:54px}.brand__name{font-size:clamp(12px,3.8vw,17px);letter-spacing:.4px}.brand__mark{width:27px;height:27px;font-size:14px}.chip--when{font-size:clamp(10px,2.8vw,12px);padding:6px clamp(6px,2.5vw,14px);gap:clamp(4px,1.5vw,7px)}.chip__live{width:6px;height:6px}}.hero{position:relative;padding:10px 0 18px;overflow:hidden}.hero__glow{position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(180deg, rgba(14,16,23,.8), rgba(14,16,23,.64) 42%, rgba(14,16,23,.92)), radial-gradient(400px 300px at 80% 8%, rgba(201,161,90,.22), transparent 62%), radial-gradient(460px 360px at 10% 92%, rgba(46,58,94,.4), transparent 64%)}.hero__grid{position:relative;z-index:1;display:flex;flex-direction:column}.hero__media{position:relative;z-index:1;width:min(84%, clamp(210px,68vw,290px));max-width:290px;margin:0 auto -10px}.portrait{position:relative;width:100%}.portrait__img{width:100%;display:block;filter:drop-shadow(0 16px 26px rgba(0,0,0,.6))}.hero__col:not(.hero__media){text-align:center}.hero .eyebrow, .hero__cta{justify-content:center}.hero__cta{position:relative;z-index:3;display:flex;flex-direction:column;gap:11px;margin-bottom:18px}.hero__cta .btn{width:100%}.count{text-align:center}.count__lbl{display:block;font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:9px}.count__row{display:flex;gap:8px;justify-content:center}.cd{flex:1;min-width:0;text-align:center;padding:11px 4px;background:linear-gradient(180deg, var(--panel), var(--ink-2));border:1px solid var(--line);border-radius:13px}.cd b{display:block;font-family:'Playfair Display' , serif;font-weight:800;font-size:23px;color:var(--gold-lt);line-height:1}.cd span{display:block;margin-top:5px;font-size:9.5px;letter-spacing:.6px;text-transform:uppercase;color:var(--muted)}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}body{background:radial-gradient(1000px 700px at 50% -5%, #191d29, #0a0c12 60%)}img{height:auto}</style>
+    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="./css/main.css" /></noscript>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="wrap nav__row">
+        <a href="#top" class="brand">
+          <span class="brand__mark">✂</span>
+          <span class="brand__name">MASTER<span class="brand__dot">·</span>KOMO</span>
+        </a>
+        <div class="nav__meta">
+          <span class="chip chip--when">
+            <span class="chip__live" aria-hidden="true"></span>
+            <b>9–10 Okt</b>
+            <span class="chip__sep"></span>
+            <b>20:30</b>
+          </span>
         </div>
       </div>
+    </header>
 
-    </div>
-  </section>
+    <main id="top">
+      <section class="hero">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="wrap hero__grid">
+          <div class="hero__col">
+            <span class="eyebrow"><i></i>2 kunlik BEPUL master klass<i></i></span>
+            <h1 class="offer-promise">
+              Bittada <em>qolipdek</em> tushadigan asos andoza chiqarish sirlari
+            </h1>
+            <div class="hero__media">
+              <div class="portrait">
+                <img
+                  src="../images/b-expert-cut.avif"
+                  alt="Master klass ustozi"
+                  class="portrait__img"
+                  loading="lazy"
+                  decoding="async"
+                  width="591"
+                  height="666"
+                />
+              </div>
+            </div>
 
-  <!-- ===================== PROGRAM ===================== -->
-  <section class="program" id="program">
-    <div class="wrap">
-      <header class="shead reveal">
-        <span class="shead__tag">Dastur</span>
-        <h2 class="shead__title">Master klass davomida</h2>
-        <p class="shead__sub">2 kunlik bepul jonli darslarda quyidagilarni birga bajaramiz</p>
-      </header>
+            <div class="hero__cta">
+              <a href="#reg" class="btn btn--gold">BEPUL QATNASHISH →</a>
+            </div>
 
-      <div class="steps">
-
-        <article class="step reveal">
-          <div class="step__media">
-            <img src="images/asos-andoza.jpg" alt="Asos andoza chizmasi">
-          </div>
-          <div class="step__body">
-            <span class="step__no">01</span>
-            <h3 class="step__title">Asos andozani noldan chizish</h3>
-            <p class="step__text">Hisob-kitobli asos andozani <b>0 dan</b> mustaqil chizishni bosqichma-bosqich o'rgataman.</p>
-            <span class="pill-tag">amaliy</span>
-          </div>
-        </article>
-
-        <article class="step step--rev reveal">
-          <div class="step__media gallery" id="korsetGallery">
-            <img src="images/korset-front.jpg" alt="Karset — old" class="is-active">
-            <img src="images/korset-back.jpg" alt="Karset — orqa">
-            <div class="gallery__dots">
-              <button class="gdot is-active" aria-label="1"></button>
-              <button class="gdot" aria-label="2"></button>
+            <div class="count" id="countdown" aria-label="Ro'yxatdan o'tishga qolgan vaqt">
+              <span class="count__lbl">Ro'yxatdan o'tishga qoldi</span>
+              <div class="count__row">
+                <div class="cd"><b data-cd="mins">02</b><span>daqiqa</span></div>
+                <div class="cd"><b data-cd="secs">00</b><span>soniya</span></div>
+              </div>
             </div>
           </div>
-          <div class="step__body">
-            <span class="step__no">02</span>
-            <h3 class="step__title">Noodatiy fasondagi karset</h3>
-            <p class="step__text">Zamonaviy karsetni <b>eng so'nggi texnikalar</b> yordamida bichish jarayonini to'liq ko'rib chiqamiz.</p>
-            <span class="pill-tag">amaliy</span>
-          </div>
-        </article>
+        </div>
+      </section>
 
-        <article class="step reveal">
-          <div class="step__media">
-            <img src="images/atelier.jpg" alt="Atelierda libos bichish" style="object-position:center 34%">
-          </div>
-          <div class="step__body">
-            <span class="step__no">03</span>
-            <h3 class="step__title">Chet el brend uslubida libos</h3>
-            <p class="step__text">Xalqaro brend kiyimlari uslubida <b>libos bichishni</b> jonli ravishda ko'rsatib beraman.</p>
-          </div>
-        </article>
+      <section class="program" id="program">
+        <div class="wrap">
+          <header class="shead">
+            <span class="shead__tag">Dastur</span>
+            <h2 class="shead__title">Master klass davomida</h2>
+            <p class="shead__sub">2 kunlik bepul jonli darslarda quyidagilarni birga bajaramiz</p>
+          </header>
 
-        <article class="step step--rev reveal">
-          <div class="step__media">
-            <img src="images/tailoring.jpg" alt="Professional tikuvchilik jihozlari">
-          </div>
-          <div class="step__body">
-            <span class="step__no">04</span>
-            <h3 class="step__title">Professional yondashuv</h3>
-            <p class="step__text">Haqiqiy tikuvchilikdagi <b>professional sir va usullarni</b> o'zlashtirib olasiz.</p>
-          </div>
-        </article>
+          <div class="steps">
+            <article class="step">
+              <div class="step__media">
+                <img
+                  src="../images/asos-andoza.avif"
+                  alt="Asos andoza chizmasi"
+                  loading="lazy"
+                  decoding="async"
+                  width="480"
+                  height="652"
+                />
+              </div>
+              <div class="step__body">
+                <span class="step__no">01</span>
+                <h3 class="step__title">Asos andozani noldan chizish</h3>
+                <p class="step__text">
+                  Hisob-kitobli asos andozani <b>0 dan</b> mustaqil chizishni bosqichma-bosqich
+                  o'rgataman.
+                </p>
+                <span class="pill-tag">amaliy</span>
+              </div>
+            </article>
 
+            <article class="step step--rev">
+              <div class="step__media gallery" id="korsetGallery">
+                <img
+                  src="../images/korset-front.avif"
+                  alt="Karset — old"
+                  class="is-active"
+                  loading="lazy"
+                  decoding="async"
+                  width="412"
+                  height="700"
+                />
+                <img
+                  src="../images/korset-back.avif"
+                  alt="Karset — orqa"
+                  loading="lazy"
+                  decoding="async"
+                  width="412"
+                  height="700"
+                />
+                <div class="gallery__dots">
+                  <button class="gdot is-active" aria-label="1"></button>
+                  <button class="gdot" aria-label="2"></button>
+                </div>
+              </div>
+              <div class="step__body">
+                <span class="step__no">02</span>
+                <h3 class="step__title">Noodatiy fasondagi karset</h3>
+                <p class="step__text">
+                  Zamonaviy karsetni <b>eng so'nggi texnikalar</b> yordamida bichish jarayonini
+                  to'liq ko'rib chiqamiz.
+                </p>
+                <span class="pill-tag">amaliy</span>
+              </div>
+            </article>
+
+            <article class="step">
+              <div class="step__media">
+                <img
+                  src="../images/atelier.avif"
+                  alt="Atelierda libos bichish"
+                  loading="lazy"
+                  decoding="async"
+                  width="480"
+                  height="640"
+                  class="landing-style-1"
+                />
+              </div>
+              <div class="step__body">
+                <span class="step__no">03</span>
+                <h3 class="step__title">Chet el brend uslubida libos</h3>
+                <p class="step__text">
+                  Xalqaro brend kiyimlari uslubida <b>libos bichishni</b> jonli ravishda ko'rsatib
+                  beraman.
+                </p>
+              </div>
+            </article>
+
+            <article class="step step--rev">
+              <div class="step__media">
+                <img
+                  src="../images/tailoring.avif"
+                  alt="Professional tikuvchilik jihozlari"
+                  loading="lazy"
+                  decoding="async"
+                  width="480"
+                  height="267"
+                />
+              </div>
+              <div class="step__body">
+                <span class="step__no">04</span>
+                <h3 class="step__title">Professional yondashuv</h3>
+                <p class="step__text">
+                  Haqiqiy tikuvchilikdagi <b>professional sir va usullarni</b> o'zlashtirib olasiz.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="bonus">
+        <div class="wrap bonus__card">
+          <img
+            src="../images/gift.avif"
+            alt="Sovg'a"
+            class="bonus__gift"
+            loading="lazy"
+            decoding="async"
+            width="297"
+            height="320"
+          />
+          <div class="bonus__txt">
+            <span class="bonus__tag">Maxsus bonus</span>
+            <h3 class="bonus__title">"Atigi 6 ta o'lchov bilan asos andoza chiqarish qadamlari"</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" id="reg">
+        <div class="wrap">
+          <a href="#" class="btn btn--gold btn--block">BEPUL QATNASHISH →</a>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <div class="wrap foot__row">
+          <span class="brand"
+            ><span class="brand__mark">✂</span
+            ><span class="brand__name">MASTER<span class="brand__dot">·</span>KOMO</span></span
+          >
+          <p class="foot__small">© 2026 · Professional bichiq-tikish master klassi</p>
+        </div>
+      </footer>
+    </main>
+
+    <div class="rmodal" id="regModal" hidden="">
+      <div class="rmodal__bg" data-close=""></div>
+      <div class="rmodal__card" role="dialog" aria-modal="true" aria-labelledby="rmTitle">
+        <button class="rmodal__x" type="button" aria-label="Yopish" data-close="">×</button>
+        <h3 class="rmodal__title" id="rmTitle">
+          Master klassga ro'yxatdan o'tish uchun ma'lumotlaringizni kiriting!
+        </h3>
+        <form class="rmodal__form" id="modalForm" novalidate="">
+          <label class="rfield">
+            <span>Ismingiz:</span>
+            <input
+              type="text"
+              name="name"
+              placeholder="Ism Familiya"
+              autocomplete="name"
+              required=""
+            />
+          </label>
+          <label class="rfield">
+            <span>Telefon raqamingiz:</span>
+            <span class="rphone">
+              <span class="rphone__cc">+998</span>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="90 123 45 67"
+                autocomplete="tel"
+                required=""
+              />
+            </span>
+          </label>
+          <button type="submit" class="mbtn">DAVOM ETISH</button>
+        </form>
       </div>
     </div>
-  </section>
 
-  <!-- ===================== BONUS ===================== -->
-  <section class="bonus reveal">
-    <div class="wrap bonus__card">
-      <img src="images/gift.png" alt="Sovg'a" class="bonus__gift">
-      <div class="bonus__txt">
-        <span class="bonus__tag">Maxsus bonus</span>
-        <h3 class="bonus__title">"Atigi 6 ta o'lchov bilan asos andoza chiqarish qadamlari"</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== YAKUNIY CTA ===================== -->
-  <section class="final-cta reveal" id="reg">
-    <div class="wrap">
-      <a href="#" class="btn btn--gold btn--block">BEPUL QATNASHISH →</a>
-    </div>
-  </section>
-
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="foot">
-    <div class="wrap foot__row">
-      <span class="brand"><span class="brand__mark">✂</span><span class="brand__name">MASTER<span class="brand__dot">·</span>KOMO</span></span>
-      <p class="foot__small">© 2026 · Professional bichiq-tikish master klassi</p>
-    </div>
-  </footer>
-
-</main>
-
-<!-- ===== RO'YXAT MODAL ===== -->
-<div class="rmodal" id="regModal" hidden>
-  <div class="rmodal__bg" data-close></div>
-  <div class="rmodal__card" role="dialog" aria-modal="true" aria-labelledby="rmTitle">
-    <button class="rmodal__x" type="button" aria-label="Yopish" data-close>&times;</button>
-    <h3 class="rmodal__title" id="rmTitle">Master klassga ro'yxatdan o'tish uchun ma'lumotlaringizni kiriting!</h3>
-    <form class="rmodal__form" id="modalForm" novalidate>
-      <label class="rfield">
-        <span>Ismingiz:</span>
-        <input type="text" name="name" placeholder="Ism Familiya" autocomplete="name" required>
-      </label>
-      <label class="rfield">
-        <span>Telefon raqamingiz:</span>
-        <span class="rphone">
-          <span class="rphone__cc">+998</span>
-          <input type="tel" name="phone" placeholder="90 123 45 67" autocomplete="tel" required>
-        </span>
-      </label>
-      <button type="submit" class="mbtn">DAVOM ETISH</button>
-      <div class="rmodal__ok" id="modalOk" hidden>
-        <div class="rmodal__check">✓</div>
-        <p>Rahmat! Arizangiz qabul qilindi. Tez orada bog'lanamiz.</p>
-      </div>
-    </form>
-  </div>
-</div>
-
-<script src="js/main.js"></script>
-</body>
+    <script src="../js/registration.js" defer=""></script>
+    <script src="../js/variant.js" defer=""></script>
+    <script src="../js/main.js" defer=""></script>
+  </body>
 </html>
