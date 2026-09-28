@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:5500/index.html)",
+      "Bash(python -c \"import livereload; print\\('livereload OK'\\)\")",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:5500/index.html)",
+      "Bash(echo \"root: $\\(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:5500/index.html\\)\")",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:5500/a/index.html)",
+      "Bash(echo \"a:    $\\(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:5500/a/index.html\\)\")",
+      "Bash(python *)"
+    ]
+  }
+}
