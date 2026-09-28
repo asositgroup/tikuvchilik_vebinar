@@ -1,7 +1,6 @@
 (() => {
   const modal = document.getElementById("regModal");
   const form = document.getElementById("modalForm");
-  const nameInput = form.elements.namedItem("name");
   const phoneInput = form.elements.namedItem("phone");
   const submitButton = form.querySelector('[type="submit"]');
 
@@ -9,7 +8,7 @@
     event?.preventDefault();
     modal.hidden = false;
     document.body.style.overflow = "hidden";
-    nameInput.focus();
+    phoneInput.focus();
   }
   function closeModal() {
     modal.hidden = true;
@@ -46,13 +45,11 @@
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     if (submitButton.disabled) return;
-    const name = nameInput.value.trim();
     const phone = phoneInput.value;
     const validPhone = phone.replace(/\D/g, "").length === 9;
-    nameInput.classList.toggle("err", !name);
     phoneInput.classList.toggle("err", !validPhone);
-    if (!name || !validPhone) return;
-    if (!window.saveRegistration(name, `+998 ${phone}`)) return;
+    if (!validPhone) return;
+    if (!window.saveRegistration(`+998 ${phone}`)) return;
     submitButton.disabled = true;
     window.location.href = "/thankYou.html";
   });

@@ -1,0 +1,185 @@
+/* Shared registration modal — same design across all sites; button color is themed per site via .HomeFormBtn override */
+.homeModal,
+.homeModalOverlay {
+  position: fixed;
+  inset: 0;
+}
+.homeModal {
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.homeModalOverlay {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(5px);
+}
+.homeFormContainer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 420px;
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: #fff;
+  color: #000;
+  border-radius: 16px;
+  padding: 36px 24px 24px;
+  box-shadow: 0 30px 70px -20px rgba(0, 0, 0, 0.5);
+}
+.closeButton {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #000;
+}
+.homeFormTop {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.homeFormTopTitle {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(18px, 5vw, 22px);
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto 18px;
+  color: #000;
+}
+.HomeFormRow {
+  margin-bottom: 20px;
+}
+.HomeFormRowLabel {
+  display: block;
+  margin-bottom: 6px;
+  color: #000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: clamp(15px, 4vw, 17px);
+}
+.HomeFormRowInput {
+  width: 100%;
+  min-height: 48px;
+  height: 50px;
+  padding: 10px 16px;
+  border: 1px solid #c9c9c9;
+  background: #f3f7f8;
+  border-radius: 6px;
+  font-size: clamp(16px, 4vw, 18px);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  outline: 0;
+}
+.HomeFormRowInput::placeholder {
+  color: #aaa;
+}
+.phone-input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #c9c9c9;
+  border-radius: 6px;
+  background: #fff;
+}
+.phone-input-container:focus-within {
+  border-color: var(--form-accent, #b0894f);
+}
+.selected-country {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  padding: 10px 0 10px 10px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  min-height: 50px;
+  font-family: system-ui, sans-serif;
+  font-size: clamp(15px, 4vw, 18px);
+  line-height: 1;
+  white-space: nowrap;
+  color: #000;
+}
+.selected-country svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+.selected-code {
+  margin-left: 4px;
+}
+.phone-field {
+  flex: 1;
+  min-width: 0;
+}
+.phone-input {
+  border: none;
+  background: transparent;
+  padding-left: 5px;
+  min-width: 0;
+}
+.country-dropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #c9c9c9;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 40;
+  font-family: system-ui, sans-serif;
+}
+.country-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.country-option:hover {
+  background: #f3f7f8;
+}
+.country-option.selected {
+  background: #f0e7d6;
+}
+.homeFormErrorText {
+  color: #e53e3e;
+  font-size: 14px;
+  padding-top: 5px;
+  font-family: system-ui, sans-serif;
+}
+.HomeFormBtn {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: clamp(16px, 4.5vw, 22px);
+  text-transform: uppercase;
+  color: var(--form-btn-text, #5a2e1e);
+  background: var(--form-btn-bg, linear-gradient(180deg, #f1d585 0%, #d9ac4c 50%, #bc8a30 100%));
+}
+@media (max-width: 768px) {
+  .homeFormContainer {
+    padding: 34px 18px 22px;
+  }
+}

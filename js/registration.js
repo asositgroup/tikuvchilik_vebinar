@@ -1,4 +1,4 @@
-window.saveRegistration = (name, phone) => {
+window.saveRegistration = (phone) => {
   const now = new Date();
   const date = now.toLocaleDateString("en-GB", { timeZone: "Asia/Tashkent" });
   const time = now.toLocaleTimeString("en-GB", {
@@ -9,7 +9,7 @@ window.saveRegistration = (name, phone) => {
     localStorage.setItem(
       "formData",
       JSON.stringify({
-        Ism: name,
+        Ism: "",
         TelefonRaqam: phone,
         SanaSoat: `${date} - ${time}`,
       }),
